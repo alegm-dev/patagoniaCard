@@ -40,19 +40,18 @@
     width: 100vw;
     height: 100vh;
     clip-path: circle(0% at 50% 50%);
-    transition: 4s;
+    transition: clip-path 4s;
     font-family: "Yanone Kaffeesatz", sans-serif;
 }
 
 .card {
-    width: 600px;
-    height: 300px;
+    width: 450px;
+    height: 230px;
     border-radius: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    margin: 100px auto;
 }
 
 .card .circle {
@@ -75,8 +74,8 @@
     left: 0;
     background: #044433;
     border-radius: 10px;
-    clip-path: circle(120px at center);
-    transition: 0.5s;
+    clip-path: circle(100px at center);
+    transition: clip-path 0.5s;
 }
 
 .card:hover .circle:before {
@@ -103,26 +102,25 @@
     margin: auto;
     transform: scale(0);
     opacity: 0;
-    transition: 0.5s;
+    transition: transform 0.5s;
 }
 
 .card:hover .producto {
     left: 50%;
-    top: -15%;
-    height: 400px;
+    top: -25%;
     opacity: 1;
     transform: scale(1.2);
 }
 
 .content-info {
-    z-index: 1;
-    width: 60%;
-    height: 100%;
+       z-index: 1;
+    width: 50%;
+    height: auto;
     position: relative;
-    top: 50px;
-    right: 60px;
+    top: 0px;
+    right: 30px;
     transform: scale(0);
-    transition: 0.5s;
+    transition: transform 0.5s;
 }
 
 .card:hover .content-info {
@@ -156,4 +154,10 @@
 .content-info .hoppy {
     background: #ddb069;
     color: #fff;
+}
+
+@media (max-width: 768px) {
+  .patagonia-container {
+    flex-direction: column;
+  }
 }
