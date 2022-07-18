@@ -34,7 +34,7 @@
 .patagonia-container {
     position: absolute;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background: #fffef8;
     width: 100vw;
@@ -113,13 +113,12 @@
 }
 
 .content-info {
-       z-index: 1;
+    z-index: 1;
     width: 50%;
-    height: auto;
     position: relative;
-    top: 0px;
-    right: 30px;
-    transform: scale(0);
+    top: 50%;
+    right: 16%;
+    transform: scale(0) translateY(-50%);
     transition: transform 0.5s;
 }
 
@@ -129,13 +128,13 @@
 }
 
 .content-info p {
-    font-size: 30px;
+    font-size: 20px;
     margin-bottom: 20px;
     color: #fff;
 }
 
 .content-info a {
-    font-size: 30px;
+    font-size: 20px;
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 10px;
